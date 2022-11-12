@@ -1,7 +1,6 @@
-import { MdKingBed, MdSpeed, MdPersonOutline } from 'react-icons/md';
-import { GoPerson, GoDeviceDesktop } from 'react-icons/go';
-import { AiOutlineMedicineBox, AiOutlinePlus, AiFillPieChart, AiOutlineRight } from 'react-icons/ai';
-import { RiDashboardFill, RiBarChart2Fill } from 'react-icons/ri';
+import { MdSpeed, MdPersonOutline } from 'react-icons/md';
+import { AiOutlinePlus, AiFillPieChart, AiOutlineRight } from 'react-icons/ai';
+import { RiBarChart2Fill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 // import Dashboard from '../Dashboard/Dashboard';
 import './navbar.css'
