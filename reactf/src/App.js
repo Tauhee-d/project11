@@ -1,20 +1,14 @@
 import "./App.css";
-// import MainContainer from './components/Navbar/MainContainer/MainContainer';
 import Navbar from "./components/Navbar/Navbar";
 import Topbar from "./components/Topbar/Topbar";
-// import Dashboard from './pages/Rooms/Dashboard/Dashboard';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Rooms from "./pages/Rooms/Room";
 import UserList from "./pages/UserList/UserList";
-// import { Admin } from 'react-admin';
-
-// import MainRoom from './pages/Rooms/Room';
+import UserTable from "./pages/UserTable/UserTable";
 
 function App() {
   return (
-    // <Admin>
-
     <Router>
       <Topbar title="fu@@d" />
       <div className="containers">
@@ -28,6 +22,9 @@ function App() {
           </Route>
           <Route path="/patients">
             <UserList />
+          </Route>
+          <Route path="/devices">
+            <UserTable />
           </Route>
 
           {/* <Route path="/MainRoom">
