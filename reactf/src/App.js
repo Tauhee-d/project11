@@ -6,6 +6,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Rooms from "./pages/Rooms/Room";
 import UserList from "./pages/UserList/UserList";
 import UserTable from "./pages/UserTable/UserTable";
+import UserDetail from "./pages/UserDetail/UserDetail";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/devices">
             <UserTable />
+          </Route>
+          <Route path="/userDetail">
+            <UserDetail />
           </Route>
 
           {/* <Route path="/MainRoom">

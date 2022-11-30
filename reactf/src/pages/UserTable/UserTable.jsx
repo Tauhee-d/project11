@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import './UserTable.css'
+import UserDetail from '../UserDetail/UserDetail'
+import { NavLink } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
+
 const UserData = [
     { userId: "1", name: "xyz", gender: "m", weight: "44", age: "12", addedOn: "11:00" },
     { userId: '2', name: 'xyz', gender: 'male', weight: '44', age: "12", addedOn: '11:00' },
@@ -25,12 +30,22 @@ const Row = (props) => {
     const { userId, name, gender, weight, age, addedOn } = props
     return (
         <tr>
-            <td>{userId}</td>
-            <td>{name}</td>
+
+
+            <td><Link to='./userDetail'>{userId}</Link></td>
+            <td><Link to='./userDetail'>{name}</Link></td>
+            <td><Link to='./userDetail'>{gender}</Link></td>
+            <td><Link to='./userDetail'>{weight}</Link></td>
+            <td><Link to='./userDetail'>{age}</Link></td>
+            <td><Link to='./userDetail'>{addedOn}</Link></td>
+
+
+
+            {/* <td>{name}</td>
             <td>{gender}</td>
             <td>{weight}</td>
             <td>{age}</td>
-            <td>{addedOn}</td>
+            <td>{addedOn}</td> */}
         </tr>
     )
 }
