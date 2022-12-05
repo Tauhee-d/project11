@@ -5,6 +5,9 @@
 #navheight {
     height: 80px;
     background-color: #eb9a05;
-    position: sticky;
     top: 0px;
+}
+.Topbar{
+    position: sticky;
+
 }

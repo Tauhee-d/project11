@@ -7,6 +7,7 @@ import Rooms from "./pages/Rooms/Room";
 import UserList from "./pages/UserList/UserList";
 import UserTable from "./pages/UserTable/UserTable";
 import UserDetail from "./pages/UserDetail/UserDetail";
+import TimeTemp from "./pages/TimeTemp/TimeTemp";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/userDetail">
             <UserDetail />
+          </Route>
+          <Route path="/doctors">
+            <TimeTemp />
           </Route>
 
           {/* <Route path="/MainRoom">

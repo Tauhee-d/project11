@@ -29,24 +29,27 @@ const Header = () => {
 const Row = (props) => {
     const { userId, name, gender, weight, age, addedOn } = props
     return (
+        // <Link to='../UserDetail/UserDetail.jsx'> <tr>
         <tr>
 
 
-            <td><Link to='./userDetail'>{userId}</Link></td>
+            {/* <td><Link to='./userDetail'>{userId}</Link></td>
             <td><Link to='./userDetail'>{name}</Link></td>
             <td><Link to='./userDetail'>{gender}</Link></td>
             <td><Link to='./userDetail'>{weight}</Link></td>
             <td><Link to='./userDetail'>{age}</Link></td>
-            <td><Link to='./userDetail'>{addedOn}</Link></td>
+            <td><Link to='./userDetail'>{addedOn}</Link></td> */}
 
 
 
-            {/* <td>{name}</td>
+            <td>{userId}</td>
+            <td>{name}</td>
             <td>{gender}</td>
             <td>{weight}</td>
             <td>{age}</td>
-            <td>{addedOn}</td> */}
+            <td>{addedOn}</td>
         </tr>
+        // </tr></Link>
     )
 }
 const Table = (props) => {
