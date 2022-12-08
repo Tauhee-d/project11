@@ -3,6 +3,12 @@ import { BsFillPersonFill } from 'react-icons/bs';
 import { TbDeviceLaptop } from 'react-icons/tb';
 
 const Rooms = () => {
+
+
+
+
+
+
     return (
 
         <>
