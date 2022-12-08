@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import './Dashboard.css'
-import { LineChart, ResponsiveContainer, Legend, CartesianGrid, Tooltip, Line, XAxis, YAxis } from 'recharts';
+import { LineChart, ResponsiveContainer, Legend, Tooltip, Line, XAxis, YAxis } from 'recharts';
 
 
 export default function Dashboard() {
-
-
-
 
 
   function getZeroTime() {
@@ -24,7 +21,6 @@ export default function Dashboard() {
   var ranTime = [];
   var xData = [];
   var yData = [];
-  var colors = [];
 
   const min = getZeroTime().getTime();
   const max = addDate(1).getTime() - 1;
@@ -40,25 +36,19 @@ export default function Dashboard() {
     let temp = Math.round(Math.random() * (450 - 220) + 220);
     temp = temp / 10;
     yData.push(temp);
-    if (temp < 33) {
-      colors.push("green");
-    } else if (temp > 33 && temp < 40) {
-      colors.push("orange");
-    } else if (temp > 40) {
-      colors.push("red");
-    }
+
     let d = new Date(ranTime[i]);
     const x = d.getHours() + ":" + d.getMinutes();
-    xData.push(x);
+    xData.push({ x });
   }
 
   const Data = []
   Data.push({
-    Time: xData,
-    Temperature: yData
+    xData,
+    yData
   })
-
-
+  const [Time, Temperature] = Data
+  console.log("resuult", Time);
 
 
 
@@ -86,7 +76,6 @@ export default function Dashboard() {
   }
   const Table = (props) => {
     const { data } = props
-    console.log("tabledata:", data);
     return (
       <table class="table table-striped table-bordered table-sm" id='Table'>
         <tbody>
